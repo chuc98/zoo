@@ -1,14 +1,4 @@
-class animal:
-        
-    def get_tipo(self):
-        nanimales= input("¿Cuantos animales quieres crear?")    
-        print(nanimales)
-        lista = ['x']
-        
-        for element in lista:
-            set_nombre
-        print (element)
-    
+class animal: 
     def __init__(self, nombre, tipo):
         self.nombre = nombre
         self.tipo   = tipo
@@ -17,17 +7,23 @@ class animal:
         self.nombre = nombre
           
     def get_nombre(self):
-       print(self.nombre)
+        print(self.nombre)
+        self.get_miprueba()
+        
+            
        
-    def set_tipo(self,tipo):
-       self.tipo = tipo     
-       
-          
+        
 def main():
-	animali = animal("pangoringo","pajaro")
-	animali.set_nombre("nopango")
-	animali.get_nombre()
+    
+    nanimales = int(input("¿Cuántos animales son?: "))
+    lanimales = [nanimales]
+    for x in range(0,nanimales):
+        anombre = input("¿Cuál es su nombre?")
+        atipo = input("¿Qué tipo es?")
+        if x<(nanimales - 1):
+            lanimales[x] = animal(anombre,atipo)
 
-
+        
+    
 if __name__ == "__main__":
 	main()
